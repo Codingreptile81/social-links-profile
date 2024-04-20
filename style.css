@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family:"Inter-bold"; ;
     src: url(assets\fonts\static\Inter-Bold.ttf) format("truetype");
     font-style: normal;
@@ -74,4 +74,120 @@ body{
 
 .option:hover{
     cursor: pointer;
-}
+} */
+
+
+/* Font Imports (assuming these fonts are placed in an 'assets/fonts' folder) */
+@font-face {
+    font-family: "Inter-bold";
+    src: url("assets/fonts/Inter-Bold.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Inter-Regular";
+    src: url("assets/fonts/Inter-Regular.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Inter-SemiBold";
+    src: url("assets/fonts/Inter-SemiBold.ttf") format("truetype");
+    font-style: normal;
+  }
+  
+  /* Media queries for different screen sizes */
+  
+  @media only screen and (max-width: 768px) {
+    /* Styles for phone screens */
+    .box {
+      width: 90%; /* Adjust width for smaller screens */
+      margin: 100px auto; /* Adjust margins for better positioning */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .name, .location, .disc {
+      font-size: 14px; /* Adjust font size for better readability */
+    }
+    .main-img {
+      width: 70px; /* Adjust image size for smaller screens */
+      height: 70px;
+    }
+    .option {
+      width: 200px; /* Adjust button width for smaller screens */
+      padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+    .options {
+      margin-top: 10px; /* Adjust spacing for smaller screens */
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablet screens */
+    .box {
+      width: 70%; /* Adjust width for tablet screens */
+    }
+    .name, .location, .disc {
+      font-size: 15px; /* Adjust font size for better readability */
+    }
+    .main-img {
+      width: 80px; /* Adjust image size for tablet screens */
+      height: 80px;
+    }
+    .option {
+      width: 220px; /* Adjust button width for tablet screens */
+      padding: 10px 20px; /* Adjust button padding for tablet screens */
+    }
+  }
+  
+  /* Default styles for desktop and larger screens */
+  
+  body {
+    background-color: rgba(6, 6, 6, 0.909);
+    color: white;
+  }
+  
+  .box {
+    width: 360px;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 150px auto;
+    background-color: rgba(37, 37, 37, 0.712);
+    align-content: center;
+    text-align: center;
+  }
+  
+  .name {
+    font-family: "Inter-bold", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .main-img {
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .location {
+    font-family: "Inter-bold", sans-serif;
+    color: rgb(165, 217, 86);
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  
+  .disc {
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .option {
+    font-family: "Inter-SemiBold", sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(60, 60, 60, 0.744);
+    padding: 12px 24px;
+    font-size: 16px;
+  }  
